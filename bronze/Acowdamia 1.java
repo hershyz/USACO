@@ -81,6 +81,11 @@ public class Main {
         Collections.sort(lower);
 
         for (int i = 0; i < required; i++) {
+
+            if (required > lower.size()) {
+                return -1;
+            }
+
             total += lower.get(i);
         }
 
